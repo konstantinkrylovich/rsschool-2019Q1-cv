@@ -11,6 +11,7 @@
 |github|https://github.com/konstantinkrylovich|
 
 ### Summary
+Hi,My name is Kostya and I am young, easy to learn, diligent and full of energy to gain knowledges. I would like to go deeper into the frontend technologies and learn modern methods and approaches for developing web applications. I want to become part of the frontend community and participate in projects that are meaningful to people. If you are interested in my cv, write or call me using the contacts above.
 |  Skills|:one: -- :keycap_ten: |
 | ------ | :------: |
 | CSS | :five: |
