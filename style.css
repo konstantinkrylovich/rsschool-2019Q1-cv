@@ -1,21 +1,25 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Arial , sans-serif;
-    font-size:12px;
-    color:#fff;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #fff;
     background-color: #333;
 }
 
+h1, h2 {
+    text-align: center;
+}
+
 .topnav {
-    position:fixed;
+    position: fixed;
     display: flex;
-    width:100%;
+    width: 100%;
     justify-content: flex-end;
     overflow: hidden;
-    background-color: #333;
-    margin:0;
-    top:0;
+    background-color: #0a0a0a82;
+    margin: 0;
+    top: 0;
     z-index: 99;
     height: 50px;
 }
@@ -33,11 +37,173 @@ html, body {
 .topnav a {
     color: #f2f2f2;
     text-align: center;
-    padding: 20px 20px; 
-    text-decoration: none; 
+    padding: 20px 20px;
+    text-decoration: none;
 }
-  
+
 .topnav a:hover {
     background-color: #ddd;
     color: black;
+}
+
+.main {
+    margin-top: 50px;
+}
+
+#about {
+    padding-top: 20px;
+    /* background-color: #333; */
+    background: url(assets/images/profile-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 36%;
+    height: 750px;
+}
+
+.wrapper {
+    width: 1024px;
+    min-width: 1024px;
+    margin: auto;
+}
+
+.profile {
+    /* height: 500px; */
+    width: 50%;
+    margin: 0 auto;
+}
+
+.profile p {
+    text-align: justify;
+}
+
+.skills {
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.skill-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.skill-progress {
+    width: 500px;
+    background: rgba(0, 0, 0, 0.25);
+    text-align: right;
+    display: flex;
+}
+
+.skill-name {
+    height: 18px;
+    display: inline-block;
+    width: 70px;
+    background-color: #5cb95d;
+}
+
+.skill-html {
+    background-color: #534cbd;
+}
+
+.skill-css {
+    background-color: #4ea94f;
+}
+
+.skill-js {
+    background-color: #ccce40;
+}
+
+.skill-sql {
+    background-color: #ce657d;
+}
+
+.skill-name span {
+    display: inline-block;
+    height: 100%;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.progress-bar {
+    height: 18px;
+    transition: 0.4s linear;
+    transition-property: width;
+}
+
+.barSQL {
+    background-color: #cc7489;
+    width: 30%;
+    animation: animationSQL 2s;
+}
+
+.barHTML {
+    background-color: #5e58c5;
+    width: 60%;
+    animation: animationHTML 2s;
+}
+
+.barCSS {
+    background-color: #5cb95d;
+    width: 50%;
+    animation: animationCSS 2s;
+}
+
+.barJS {
+    background-color: #d1d258;
+    width: 40%;
+    animation: animationJS 2s;
+}
+
+@keyframes animationCSS {
+    0% {
+        width: 5%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes animationHTML {
+    0% {
+        width: 5%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes animationJS {
+    0% {
+        width: 5%;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes animationSQL {
+    0% {
+        width: 5%;
+    }
+    100% {
+        width: 30%;
+    }
+}
+
+.exp-courses-container {
+    display: flex;
+    justify-content: center;
+}
+
+.exp-course {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.exp-course img {
+    width: 160px;
+    height: 150px;
+    border-radius: 120px;
 }
