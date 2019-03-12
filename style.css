@@ -1,14 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin');
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
+    font-family: "Cabin",Arial, sans-serif;
+    font-size: 16px;
     color: #fff;
     background-color: #333;
+    scroll-behavior: smooth;
 }
 
-h1, h2 {
+h1, h2, h3 {
     text-align: center;
+}
+
+h2 {
+    color:#efeeee;
+}
+
+h3 {
+    color:#bfbfbf;
+}
+
+p {
+    color:#fff4f4;
+    margin: 25px 0px;
 }
 
 .topnav {
@@ -41,9 +56,8 @@ h1, h2 {
     text-decoration: none;
 }
 
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
+.topnav a:hover { 
+    color: rgb(95, 89, 89);
 }
 
 .main {
@@ -51,13 +65,12 @@ h1, h2 {
 }
 
 #about {
-    padding-top: 20px;
-    /* background-color: #333; */
     background: url(assets/images/profile-photo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 36%;
     height: 750px;
+    min-width:1024px;
 }
 
 .wrapper {
@@ -66,20 +79,31 @@ h1, h2 {
     margin: auto;
 }
 
+.profile-container {
+    background-color: #ffffff0f;
+    height: 100%;
+}
+
 .profile {
-    /* height: 500px; */
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 
 .profile p {
     text-align: justify;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.profile h1 {
+    padding-top: 20px;
 }
 
 .skills {
-    width: 600px;
+    width: 60%;
     text-align: center;
-    margin: 0 auto;
+    margin: 330px auto 0px auto;
+    font-size: 12px;
 }
 
 .skill-container {
@@ -90,8 +114,8 @@ h1, h2 {
 }
 
 .skill-progress {
-    width: 500px;
-    background: rgba(0, 0, 0, 0.25);
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
     text-align: right;
     display: flex;
 }
@@ -122,7 +146,6 @@ h1, h2 {
 .skill-name span {
     display: inline-block;
     height: 100%;
-    vertical-align: -webkit-baseline-middle;
 }
 
 .progress-bar {
@@ -194,6 +217,7 @@ h1, h2 {
 .exp-courses-container {
     display: flex;
     justify-content: center;
+    padding-top: 25px;
 }
 
 .exp-course {
@@ -202,8 +226,52 @@ h1, h2 {
     overflow: hidden;
 }
 
+.exp-course img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),
+    0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
 .exp-course img {
     width: 160px;
     height: 150px;
     border-radius: 120px;
+}
+
+.exp-education {
+    text-align: center;
+}
+
+.exp-education p{
+    font-style: italic;
+}
+
+#contact {
+    background-color: #0a0a0a82;
+    height: 80px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+}
+
+.contacts a {
+    display: inline-block;
+    color: #444;
+    font-weight: bold;
+    text-decoration: none;
+    font-size:25px;
+    margin: 0px 5px;
+}
+
+.contacts a:hover {
+    color: #929292;
+}
+
+#contact h3 {
+    margin: 0px;
+    padding-top: 10px;
+    color:#988f8f;
 }
